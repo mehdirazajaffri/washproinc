@@ -1,4 +1,4 @@
-## [Washpro INC]
+## Washpro INC
 
 > Starter application for building APIs with Express.js
 
