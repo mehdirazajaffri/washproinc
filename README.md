@@ -1,6 +1,4 @@
-## [Property Deal]
-
-Property Deal Node es6 express BookShelf
+## [Washpro INC]
 
 > Starter application for building APIs with Express.js
 
