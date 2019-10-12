@@ -1,33 +1,33 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
-import InputLabel from "@material-ui/core/InputLabel";
-import FormControl from "@material-ui/core/FormControl";
-import Checkbox from "@material-ui/core/Checkbox";
+import withStyles from '@material-ui/core/styles/withStyles';
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
+import Checkbox from '@material-ui/core/Checkbox';
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
 
-import customSelectStyle from "assets/jss/material-dashboard-pro-react/customSelectStyle.js";
-import customCheckboxRadioSwitch from "assets/jss/material-dashboard-pro-react/customCheckboxRadioSwitch.js";
+import customSelectStyle from 'assets/jss/material-dashboard-pro-react/customSelectStyle.js';
+import customCheckboxRadioSwitch from 'assets/jss/material-dashboard-pro-react/customCheckboxRadioSwitch.js';
 
 const style = {
   infoText: {
-    fontWeight: "300",
-    margin: "10px 0 30px",
-    textAlign: "center"
+    fontWeight: '300',
+    margin: '10px 0 30px',
+    textAlign: 'center'
   },
   inputAdornmentIcon: {
-    color: "#555"
+    color: '#555'
   },
   choiche: {
-    textAlign: "center",
-    cursor: "pointer",
-    marginTop: "20px"
+    textAlign: 'center',
+    cursor: 'pointer',
+    marginTop: '20px'
   },
   ...customSelectStyle,
   ...customCheckboxRadioSwitch
@@ -37,7 +37,7 @@ class Step2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      simpleSelect: "",
+      simpleSelect: '',
       desgin: false,
       code: false,
       develop: false
@@ -67,21 +67,9 @@ class Step2 extends React.Component {
                 <div className={classes.choiche}>
                   <Checkbox
                     tabIndex={-1}
-                    onClick={this.handleChange("desgin")}
-                    checkedIcon={
-                      <i
-                        className={
-                          "fas fa-pencil-alt " + classes.iconCheckboxIcon
-                        }
-                      />
-                    }
-                    icon={
-                      <i
-                        className={
-                          "fas fa-pencil-alt " + classes.iconCheckboxIcon
-                        }
-                      />
-                    }
+                    onClick={this.handleChange('desgin')}
+                    checkedIcon={<i className={'fas fa-pencil-alt ' + classes.iconCheckboxIcon} />}
+                    icon={<i className={'fas fa-pencil-alt ' + classes.iconCheckboxIcon} />}
                     classes={{
                       checked: classes.iconCheckboxChecked,
                       root: classes.iconCheckbox
@@ -94,21 +82,9 @@ class Step2 extends React.Component {
                 <div className={classes.choiche}>
                   <Checkbox
                     tabIndex={-1}
-                    onClick={this.handleChange("code")}
-                    checkedIcon={
-                      <i
-                        className={
-                          "fas fa-terminal " + classes.iconCheckboxIcon
-                        }
-                      />
-                    }
-                    icon={
-                      <i
-                        className={
-                          "fas fa-terminal " + classes.iconCheckboxIcon
-                        }
-                      />
-                    }
+                    onClick={this.handleChange('code')}
+                    checkedIcon={<i className={'fas fa-terminal ' + classes.iconCheckboxIcon} />}
+                    icon={<i className={'fas fa-terminal ' + classes.iconCheckboxIcon} />}
                     classes={{
                       checked: classes.iconCheckboxChecked,
                       root: classes.iconCheckbox
@@ -121,17 +97,9 @@ class Step2 extends React.Component {
                 <div className={classes.choiche}>
                   <Checkbox
                     tabIndex={-1}
-                    onClick={this.handleChange("develop")}
-                    checkedIcon={
-                      <i
-                        className={"fas fa-laptop " + classes.iconCheckboxIcon}
-                      />
-                    }
-                    icon={
-                      <i
-                        className={"fas fa-laptop " + classes.iconCheckboxIcon}
-                      />
-                    }
+                    onClick={this.handleChange('develop')}
+                    checkedIcon={<i className={'fas fa-laptop ' + classes.iconCheckboxIcon} />}
+                    icon={<i className={'fas fa-laptop ' + classes.iconCheckboxIcon} />}
                     classes={{
                       checked: classes.iconCheckboxChecked,
                       root: classes.iconCheckbox
@@ -140,10 +108,7 @@ class Step2 extends React.Component {
                   <h6>Develop</h6>
                 </div>
                 <FormControl fullWidth className={classes.selectFormControl}>
-                  <InputLabel
-                    htmlFor="simple-select"
-                    className={classes.selectLabel}
-                  >
+                  <InputLabel htmlFor="simple-select" className={classes.selectLabel}>
                     Choose City
                   </InputLabel>
                   <Select
@@ -156,8 +121,8 @@ class Step2 extends React.Component {
                     value={this.state.simpleSelect}
                     onChange={this.handleSimple}
                     inputProps={{
-                      name: "simpleSelect",
-                      id: "simple-select"
+                      name: 'simpleSelect',
+                      id: 'simple-select'
                     }}
                   >
                     <MenuItem
