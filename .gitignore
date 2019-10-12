@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn integrity file
+.yarn-integrity
+
+# IntelliJ IDE
+.idea
+
+# Build directory
+dist
+
+# Dotenv configuration
+.env
+
+# Visual Studio Code
+.vscode
+
+# Tests
+coverage
+.nyc_output
+
+# Vim swp files
+*.swp
+
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/client_order/node_modules
+/client_order/.DS_Store
+
+# testing
+/client_order/coverage
+
+# production
+/client_order/build
+
+# misc
+/client_order/.DS_Store
+/client_order/.env.local
+/client_order/.env.development.local
+/client_order/.env.test.local
+/client_order/.env.production.local
+
+/client_order/npm-debug.log*
+/client_order/yarn-debug.log*
+/client_order/yarn-error.log*
